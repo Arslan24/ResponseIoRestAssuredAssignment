@@ -1,0 +1,191 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-15T11:04:50.710Z",
+        "line": 10,
+        "name": "verify if booking is being successfully added using CreateBookingAPI",
+        "description": "",
+        "id": "verify-that-the-create-booking-api-is-working-fine;verify-if-booking-is-being-successfully-added-using-createbookingapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1105435000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add booking payload with \u0027Arslan\u0027 \u0027Noor\u0027 \u0027100\u0027 \u0027true\u0027 \u00272018-01-01\u0027 \u00272019-01-01\u0027 \u0027Breakfast\u0027 booking api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Arslan\u0027",
+                  "offset": 25
+                },
+                {
+                  "val": "\u0027Noor\u0027",
+                  "offset": 34
+                },
+                {
+                  "val": "\u0027100\u0027",
+                  "offset": 41
+                },
+                {
+                  "val": "\u0027true\u0027",
+                  "offset": 47
+                },
+                {
+                  "val": "\u00272018-01-01\u0027",
+                  "offset": 54
+                },
+                {
+                  "val": "\u00272019-01-01\u0027",
+                  "offset": 67
+                },
+                {
+                  "val": "\u0027Breakfast\u0027",
+                  "offset": 80
+                }
+              ],
+              "location": "CreateBookingStepDefination.add_Booking(String,String,String,String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3251749500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user \u0027\u003cRequest\u003e\u0027 for create a booking api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027\u003cRequest\u003e\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "CreateBookingStepDefination.user_Send_Request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3741100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "CreateBookingStepDefination.api_call_success(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-10-15T11:04:55.136Z",
+        "line": 11,
+        "name": "verify if booking is being successfully added using CreateBookingAPI",
+        "description": "",
+        "id": "verify-that-the-create-booking-api-is-working-fine;verify-if-booking-is-being-successfully-added-using-createbookingapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2220400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Add booking payload with \u0027Arslan\u0027 \u0027Noor\u0027 \u0027100\u0027 \u00271\u0027 \u00272018-01-01\u0027 \u00272019-01-01\u0027 \u0027Breakfast\u0027 booking api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Arslan\u0027",
+                  "offset": 25
+                },
+                {
+                  "val": "\u0027Noor\u0027",
+                  "offset": 34
+                },
+                {
+                  "val": "\u0027100\u0027",
+                  "offset": 41
+                },
+                {
+                  "val": "\u00271\u0027",
+                  "offset": 47
+                },
+                {
+                  "val": "\u00272018-01-01\u0027",
+                  "offset": 51
+                },
+                {
+                  "val": "\u00272019-01-01\u0027",
+                  "offset": 64
+                },
+                {
+                  "val": "\u0027Breakfast\u0027",
+                  "offset": 77
+                }
+              ],
+              "location": "CreateBookingStepDefination.add_Booking(String,String,String,String,String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1484269400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user \u0027\u003cRequest\u003e\u0027 for create a booking api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027\u003cRequest\u003e\u0027",
+                  "offset": 9
+                }
+              ],
+              "location": "CreateBookingStepDefination.user_Send_Request(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 949600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 41
+                }
+              ],
+              "location": "CreateBookingStepDefination.api_call_success(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Verify that the create booking API is working fine",
+    "description": "",
+    "id": "verify-that-the-create-booking-api-is-working-fine",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/CreateBooking.feature",
+    "tags": []
+  }
+]
